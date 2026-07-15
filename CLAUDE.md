@@ -15,4 +15,8 @@ und Higgsfield-CDN-Assets.
 wkhtmltopdf mit --enable-local-file-access, A4-Layout stabil getestet.
 
 ## Skills
-Huashu Design (HTML-native Design-Prototypen/Slide-Decks) ist installiert.
+Huashu Design (HTML-native Design-Prototypen/Slide-Decks) ist installiert
+und MUSS für alle Design-Aufgaben in diesem Repo verwendet werden:
+neue Pitch-Demos, Prototypen, Slide-Decks, Animationen und Infografiken.
+Vor jeder solchen Aufgabe das Skill laden statt HTML/Design freihändig
+zu bauen.
