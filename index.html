@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kyvex – Jura lernen: Österreichisches Recht</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark">§</span>
+      <div>
+        <h1>Kyvex</h1>
+        <p>Jura lernen – Österreichisches Recht</p>
+      </div>
+    </div>
+    <div class="score-badge" id="scoreBadge">Punkte: 0 / 0</div>
+  </header>
+
+  <main>
+    <section id="topicList" class="topic-list" aria-label="Themenübersicht"></section>
+
+    <section id="topicView" class="topic-view hidden">
+      <button class="back-btn" id="backBtn">← Zur Themenübersicht</button>
+
+      <div class="professor-card">
+        <div class="professor-avatar" aria-hidden="true">🎓</div>
+        <div>
+          <h2 id="topicTitle"></h2>
+          <p class="topic-subtitle" id="topicSubtitle"></p>
+          <p class="professor-speech" id="topicIntro"></p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Kernbegriffe</h3>
+        <dl class="concepts" id="conceptsList"></dl>
+      </div>
+
+      <div class="panel">
+        <h3>Prüfungsschema</h3>
+        <ol class="schema" id="schemaList"></ol>
+      </div>
+
+      <div class="panel">
+        <h3>Quiz</h3>
+        <div id="quizContainer"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Kyvex · Lernbegleiter, ersetzt kein rechtsverbindliches Rechtsgutachten.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
