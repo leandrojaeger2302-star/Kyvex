@@ -85,7 +85,7 @@ export function Hero() {
             <span className="font-semibold text-cream">Mo–Fr</span> 10:00–19:00
           </div>
           <div>
-            <span className="font-semibold text-cream">Sa</span> 9:00–18:00
+            <span className="font-semibold text-cream">Sa</span> 9:30–18:00
           </div>
         </motion.div>
       </div>

@@ -15,9 +15,9 @@ export const siteConfig = {
   instagramHandle: "@mastercutbarbier",
   perfumeInstagram: "https://www.instagram.com/masterscent2023",
   address: {
-    line1: "Bregenz am Bodensee",
-    line2: "Vorarlberg, Österreich",
-    mapsHref: "https://www.google.com/maps/search/?api=1&query=Mastercut+Barbershop+Bregenz",
+    line1: "Maurachgasse 24",
+    line2: "6900 Bregenz, Österreich",
+    mapsHref: "https://www.google.com/maps/search/?api=1&query=Mastercut+Barbershop+Maurachgasse+24+6900+Bregenz",
   },
   secondLocation: {
     name: "Masterfade",
@@ -27,7 +27,7 @@ export const siteConfig = {
 
 export const hours = [
   { day: "Montag – Freitag", time: "10:00 – 19:00" },
-  { day: "Samstag", time: "09:00 – 18:00" },
+  { day: "Samstag", time: "09:30 – 18:00" },
   { day: "Sonntag", time: "Geschlossen" },
 ];
 
