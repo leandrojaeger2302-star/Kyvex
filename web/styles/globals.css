@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ink: #060605;
+  --color-surface: #0e0e0e;
+  --color-surface-raised: #151513;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-line-strong: rgba(201, 162, 75, 0.35);
+  --color-cream: #f6f2e9;
+  --color-muted: #a39c8d;
+  --color-gold: #c9a24b;
+  --color-gold-light: #e9d6a3;
+  --color-gold-dark: #8a6c2f;
+
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-inter);
+
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: #1a1408;
+}
+
+/* Thin gold scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark);
+  border-radius: 999px;
+  border: 2px solid var(--color-ink);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.section-shell {
+  padding-block: clamp(4.5rem, 9vw, 8rem);
+}
+
+.container-shell {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(120deg, var(--color-gold-light), var(--color-gold) 45%, var(--color-gold-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hairline {
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  height: 1px;
+}
