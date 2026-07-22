@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { ChevronDown, Star } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/InstagramIcon";
 import { Button } from "@/components/Button";
-import { heroPoster, heroVideo, siteConfig } from "@/lib/site-data";
+import { salonReelVideo, siteConfig } from "@/lib/site-data";
 
 export function Hero() {
   return (
@@ -15,9 +15,9 @@ export function Hero() {
         muted
         loop
         playsInline
-        poster={heroPoster}
+        poster="/images/founder-portrait.jpg"
       >
-        <source src={heroVideo} type="video/mp4" />
+        <source src={salonReelVideo} type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/75 to-ink" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/60 via-transparent to-ink/40" />
